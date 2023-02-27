@@ -109,11 +109,12 @@ nav {
   border-bottom-left-radius: 2.8rem;
 }
 
-.keyboard-tablet,
-.pattern {
+.keyboard-desktop {
   display: none;
 }
-
+.keyboard-tablet {
+  display: none;
+}
 .img-main-section {
   display: flex;
   margin-top: 2.4rem;
@@ -202,7 +203,7 @@ footer {
   .sub-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6.9rem;
+    column-gap: 6.9rem;
     align-items: center;
   }
   .keyboard {
@@ -212,8 +213,6 @@ footer {
     padding: 4.9rem 3.9rem;
   }
   .keyboard-tablet {
-    background-image: url(./assets/tablet/image-keyboard.jpg);
-    background-repeat: no-repeat;
     height: 42.5rem;
     display: inline-block;
     width: max(37.8rem, 100%);
@@ -301,9 +300,6 @@ footer {
     margin-left: 5.5rem;
   }
   .keyboard-desktop {
-    background-image: url(./assets/desktop/image-keyboard.jpg);
-    background-repeat: no-repeat;
-    height: 63rem;
     display: inline-block;
     width: max(54rem, 100%);
     background-size: cover;
