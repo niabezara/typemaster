@@ -220,6 +220,7 @@ footer {
     margin-top: 1.6rem;
     border-top-left-radius: 2.8rem;
     border-bottom-left-radius: 2.8rem;
+    transform: scaleX(1) translate(5rem);
   }
 
   .img-main-section {
