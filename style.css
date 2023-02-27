@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Barlow";
+}
+
+/* nav section  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6.8rem;
+}
+
+.logo {
+  height: 4rem;
+}
+.container {
+  padding: 2.4rem;
+  overflow: hidden;
+}
+.order {
+  background: #e8eff2;
+  border-radius: 0.8rem;
+  color: #162542;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.1rem 1.4rem;
+}
+
+.pre-order:hover {
+  background: #ff9b62;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.order:hover {
+  background: #162542;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+/* sub-header section  */
+.sub-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  color: #162542;
+}
+
+.info {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #7b8bad;
+  margin: 3.2rem 0 3.2rem 0;
+}
+
+/* sub-header buttons */
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.pre-order {
+  background: #f16718;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 1.1rem 1.4rem;
+}
+
+.release {
+  color: #7b8bad;
+  background: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  border: none;
+}
+
+.keyboard {
+  background-image: url(./assets/mobile/image-keyboard.jpg);
+  background-repeat: no-repeat;
+  height: 30rem;
+  width: max(37.2rem, 100%);
+  background-size: cover;
+  margin-top: 2.4rem;
+  border-top-left-radius: 2.8rem;
+  border-bottom-left-radius: 2.8rem;
+}
+
+.keyboard-tablet,
+.pattern {
+  display: none;
+}
+
+.img-main-section {
+  display: flex;
+  margin-top: 2.4rem;
+  gap: 1.9rem;
+  justify-content: right;
+}
+
+.img-phone {
+  background-image: url(./assets/mobile/image-phone-and-keyboard.jpg);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-color: #f16718;
+  width: max(12.9rem, 39%);
+  height: 190px;
+  background-blend-mode: multiply;
+  opacity: 0.75;
+  flex-shrink: 0;
+  background-size: cover;
+}
+
+.img-glass {
+  background-image: url(./assets/mobile/image-glass-and-keyboard.jpg);
+  border-radius: 20px;
+  width: max(22rem, 65%);
+  height: 193px;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+main {
+  align-items: center;
+  text-align: center;
+}
+
+section h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162542;
+}
+section p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #7b8bad;
+}
+
+footer {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.4rem;
+  gap: 2.4rem;
+}
+.icon {
+  background-color: #f16718;
+  padding: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.6rem;
+  height: 6.5rem;
+  width: 6.5rem;
+  margin-bottom: 2.4rem;
+}
+
+footer {
+  margin-top: 9.6rem;
+}
+
+.mecanical-1 {
+  display: none;
+}
+/* tablet version  */
+@media screen and (min-width: 768px) {
+  .sub-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6.9rem;
+    align-items: center;
+  }
+  .keyboard {
+    display: none;
+  }
+  .container {
+    padding: 4.9rem 3.9rem;
+  }
+  .keyboard-tablet {
+    background-image: url(./assets/tablet/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    height: 42.5rem;
+    display: inline-block;
+    width: max(37.8rem, 100%);
+    background-size: cover;
+    margin-top: 1.6rem;
+    border-top-left-radius: 2.8rem;
+    border-bottom-left-radius: 2.8rem;
+  }
+
+  .img-main-section {
+    display: flex;
+    margin-top: 2.4rem;
+    gap: 3.9rem;
+    justify-content: right;
+  }
+
+  .img-phone {
+    width: max(12.9rem, 39%);
+    opacity: 0.9;
+    flex-shrink: unset;
+    height: 32rem;
+  }
+
+  .img-glass {
+    height: 32rem;
+  }
+
+  section {
+    align-items: flex-start;
+  }
+  section p {
+    text-align: start;
+    width: 28.1rem;
+  }
+
+  section h1 {
+    width: 18.3rem;
+    text-align: start;
+  }
+  .sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6.9rem;
+  }
+  .mecanical-2 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mecanical-2 h1 {
+    width: 22.5rem;
+    text-align: start;
+  }
+  .mecanical-2 p {
+    width: 39.8rem;
+    text-align: start;
+  }
+}
+/* desktop version  */
+@media screen and (min-width: 1440px) {
+  .sub-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12.5rem;
+  }
+
+  .container {
+    padding: 6.4rem 16.5rem;
+  }
+  .keyboard-tablet {
+    display: none;
+  }
+  .title {
+    width: 44.5rem;
+    font-size: 5.6rem;
+  }
+  .info {
+    width: 44.5rem;
+    font-size: 1.8rem;
+  }
+  .header-buttons {
+    display: unset;
+  }
+  .release {
+    margin-left: 5.5rem;
+  }
+  .keyboard-desktop {
+    background-image: url(./assets/desktop/image-keyboard.jpg);
+    background-repeat: no-repeat;
+    height: 63rem;
+    display: inline-block;
+    width: max(54rem, 100%);
+    background-size: cover;
+    margin-top: 1.6rem;
+    border-radius: 2.8rem;
+  }
+
+  body {
+    background-image: url(./shared/pattern-square.svg),
+      url(./shared/pattern-square.svg);
+    background-repeat: no-repeat, no-repeat;
+    display: inline;
+    margin-top: 1.6rem;
+    background-position: right -13rem top 19rem, left -12rem top 109rem;
+  }
+
+  .mecanical-2 {
+    display: none;
+  }
+
+  .mecanical-1 {
+    display: inline-block;
+    justify-self: flex-end;
+  }
+  .mecanical-1 h1 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .img-main-section {
+    display: grid;
+    grid-template-columns: 25.5rem repeat(2, 1fr);
+    margin-top: 2.4rem;
+    gap: 3.9rem;
+  }
+
+  .img-phone {
+    width: max(25.5rem, 100%);
+    opacity: 0.9;
+    height: 48rem;
+  }
+
+  .img-glass {
+    height: 48rem;
+    width: max(44.5rem, 100%);
+  }
+
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    margin-top: 10.3rem;
+  }
+}
